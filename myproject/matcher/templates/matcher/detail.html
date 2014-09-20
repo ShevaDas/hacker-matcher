@@ -1,0 +1,9 @@
+<div><span class="field">Name:</span> {{ hacker.full_name }}</div>
+<div><span class="field">Gender:</span> {{ hacker.get_gender_display }}</div>
+<div><span class="field">Primary skill:</span> {{ hacker.get_skill_display }}</div>
+<div><span class="field">Looking for:</span> {{ hacker.get_looking_for_display }}</div>
+<div><span class="field">Website:</span> <a href="{{ hacker.website }}">{{ hacker.website }}</a></div>
+<div><span class="field">Details:</span> {{ hacker.details }}</div>
+<div><span class="email"><a href="mailto:{{ hacker.email }}">Email this hacker</a></span></div>
+
+

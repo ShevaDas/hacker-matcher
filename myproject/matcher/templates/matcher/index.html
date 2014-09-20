@@ -1,0 +1,11 @@
+<h1>Our 5 newest hackers:</h1>
+{% if newest_hacker_list %}
+	<ul>
+	{% for hacker in newest_hacker_list %}
+		<li><a href="{% url 'matcher:detail' hacker.id %}">{{ hacker.full_name }}</a></li>
+	{% endfor %}
+	</ul>
+<p>Register now to find awesome people to hack with!</p>
+{% else %}
+	<p>Nobody has registered for the site lately!</p>
+{% endif %}
