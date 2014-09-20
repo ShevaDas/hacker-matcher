@@ -32,3 +32,6 @@ class Hacker(models.Model):
     looking_for = models.CharField(max_length=2,
                              choices=SKILL_CHOICES,
                              default=DEVELOPER)
+
+    def __str__(self):
+      return self.full_name
